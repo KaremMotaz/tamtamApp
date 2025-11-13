@@ -1,0 +1,42 @@
+class AppAssets {
+  static const String logo = 'assets/logo/tamtam_logo.png';
+  static const String onboarding = 'assets/images/onboarding.png';
+  static const String selectLanguage = 'assets/images/select_language.png';
+  static const String auth = 'assets/images/login.png';
+  static const String success = 'assets/images/success.png';
+  static const String done = 'assets/images/done.png';
+  static const String calendar = 'assets/svgs/calendar.svg';
+  static const String add = 'assets/svgs/add.svg';
+  static const String cart = 'assets/svgs/cart.svg';
+  static const String discount = 'assets/svgs/discount.svg';
+  static const String dot = 'assets/svgs/dot.svg';
+  static const String emojiGirl = 'assets/images/emoji_girl.png';
+  static const String filter = 'assets/svgs/filter.svg';
+  static const String heart = 'assets/svgs/heart.svg';
+  static const String home = 'assets/svgs/home.svg';
+  static const String brands = 'assets/svgs/brands.svg';
+  static const String menu = 'assets/svgs/menu.svg';
+  static const String notification = 'assets/svgs/notification.svg';
+  static const String person = 'assets/svgs/person.svg';
+  static const String search = 'assets/svgs/search.svg';
+  static const String ad1 = 'assets/images/ad1.png';
+  static const String ad2 = 'assets/images/ad2.png';
+  static const String ad3 = 'assets/images/ad3.png';
+  static const String brand1 = 'assets/images/brand_1.png';
+  static const String brand2 = 'assets/images/brand_2.png';
+  static const String brand3 = 'assets/images/brand_3.png';
+  static const String brand4 = 'assets/images/brand_4.png';
+  static const String card1 = 'assets/images/card_1.png';
+  static const String card2 = 'assets/images/card_2.png';
+  static const String boysCard = 'assets/images/boys_card.png';
+  static const String girlsCard = 'assets/images/girls_card.png';
+  static const String mareo = 'assets/images/mareo.png';
+  static const String playSets = 'assets/images/Play_Sets.png';
+  static const String rainbocorns = 'assets/images/rainbocorns.png';
+  static const String rideOnAndScooters =
+      'assets/images/Ride_on_and_scooters.png';
+  static const String toy = 'assets/images/toy.png';
+  static const String bottomNavBarShape = 'assets/images/bottom_nav_bar_shape.png';
+  static const String arrowRight = 'assets/svgs/arrowRight.svg';
+  static const String arrowBack = 'assets/svgs/arrow_back.svg';
+}
