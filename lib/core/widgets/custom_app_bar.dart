@@ -30,18 +30,15 @@ class _CustomAppBarState extends State<CustomAppBar> {
       leading: context.canPop()
           ? InkWell(
               borderRadius: BorderRadius.circular(50),
-              onTap: () => context.canPop(),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 20),
-                child: Container(
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: AppColors.moreLighterGrey,
-                  ),
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: SvgPicture.asset(AppAssets.arrowBack),
-                  ),
+              onTap: () => context.pop(),
+              child: Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: AppColors.moreLighterGrey,
+                ),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: SvgPicture.asset(AppAssets.arrowBack),
                 ),
               ),
             )

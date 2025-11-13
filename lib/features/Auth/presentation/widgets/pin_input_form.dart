@@ -28,28 +28,26 @@ class _PinInputFormState extends State<PinInputForm> {
   Widget build(BuildContext context) {
     return Form(
       key: formKey,
-      child: Expanded(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Column(
-            children: [
-              Spacer(),
-              CustomPinput(otpController: otpController),
-              Spacer(),
-              AppTextButton(
-                onPressed: () {
-                  validateThenVerifyPhoneNumber(context);
-                },
-                buttonText: "Verify",
-                borderRadius: 25,
-                buttonWidth: double.infinity,
-                verticalPadding: 0,
-              ),
-              SizedBox(height: 14.h),
-              ResendOtpWidget(),
-              Spacer(flex: 2),
-            ],
-          ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          children: [
+            Spacer(),
+            CustomPinput(otpController: otpController),
+            Spacer(),
+            AppTextButton(
+              onPressed: () {
+                validateThenVerifyPhoneNumber(context);
+              },
+              buttonText: "Verify",
+              borderRadius: 25,
+              buttonWidth: double.infinity,
+              verticalPadding: 0,
+            ),
+            SizedBox(height: 14.h),
+            ResendOtpWidget(),
+            Spacer(flex: 2),
+          ],
         ),
       ),
     );

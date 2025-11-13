@@ -33,7 +33,7 @@ class ForgetPasswordView extends StatelessWidget {
                   style: AppStyles.medium15.copyWith(color: AppColors.darkGrey),
                 ),
               ),
-              ForgotPasswordForm(),
+              Expanded(child: ForgotPasswordForm()),
             ],
           ),
         ),

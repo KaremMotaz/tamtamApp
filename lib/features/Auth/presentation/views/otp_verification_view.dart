@@ -35,7 +35,7 @@ class OtpVerificationView extends StatelessWidget {
                   style: AppStyles.medium15.copyWith(color: AppColors.darkGrey),
                 ),
               ),
-              PinInputForm(isForResetPassword: isForResetPassword),
+              Expanded(child: PinInputForm(isForResetPassword: isForResetPassword)),
             ],
           ),
         ),

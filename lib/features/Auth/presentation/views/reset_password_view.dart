@@ -31,7 +31,7 @@ class ResetPasswordView extends StatelessWidget {
                   style: AppStyles.medium15.copyWith(color: AppColors.darkGrey),
                 ),
               ),
-              ResetPasswordForm(),
+              Expanded(child: ResetPasswordForm()),
             ],
           ),
         ),

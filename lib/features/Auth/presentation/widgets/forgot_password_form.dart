@@ -24,26 +24,24 @@ class _PinInputFormState extends State<ForgotPasswordForm> {
   Widget build(BuildContext context) {
     return Form(
       key: formKey,
-      child: Expanded(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Column(
-            children: [
-              Spacer(),
-              PhoneTextField(phoneNumberController: phoneNumberController),
-              Spacer(),
-              AppTextButton(
-                onPressed: () {
-                  validateThenVerifyCode(context);
-                },
-                buttonText: "Send Code",
-                borderRadius: 25,
-                buttonWidth: double.infinity,
-                verticalPadding: 0,
-              ),
-              Spacer(flex: 2),
-            ],
-          ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          children: [
+            Spacer(),
+            PhoneTextField(phoneNumberController: phoneNumberController),
+            Spacer(),
+            AppTextButton(
+              onPressed: () {
+                validateThenVerifyCode(context);
+              },
+              buttonText: "Send Code",
+              borderRadius: 25,
+              buttonWidth: double.infinity,
+              verticalPadding: 0,
+            ),
+            Spacer(flex: 2),
+          ],
         ),
       ),
     );

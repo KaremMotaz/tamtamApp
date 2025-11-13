@@ -29,33 +29,31 @@ class _PinInputFormState extends State<ResetPasswordForm> {
   Widget build(BuildContext context) {
     return Form(
       key: formKey,
-      child: Expanded(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Column(
-            children: [
-              Spacer(),
-              NewPasswordTextField(
-                newPasswordController: newPasswordController,
-              ),
-              SizedBox(height: 55.h),
-              ConfirmPasswordTextField(
-                confirmPasswordController: confirmPasswordController,
-                passwordController: newPasswordController,
-              ),
-              Spacer(),
-              AppTextButton(
-                onPressed: () {
-                  validateThenResetPassword(context);
-                },
-                buttonText: "Reset Password",
-                borderRadius: 25,
-                buttonWidth: double.infinity,
-                verticalPadding: 0,
-              ),
-              Spacer(flex: 2),
-            ],
-          ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          children: [
+            Spacer(),
+            NewPasswordTextField(
+              newPasswordController: newPasswordController,
+            ),
+            SizedBox(height: 55.h),
+            ConfirmPasswordTextField(
+              confirmPasswordController: confirmPasswordController,
+              passwordController: newPasswordController,
+            ),
+            Spacer(),
+            AppTextButton(
+              onPressed: () {
+                validateThenResetPassword(context);
+              },
+              buttonText: "Reset Password",
+              borderRadius: 25,
+              buttonWidth: double.infinity,
+              verticalPadding: 0,
+            ),
+            Spacer(flex: 2),
+          ],
         ),
       ),
     );
