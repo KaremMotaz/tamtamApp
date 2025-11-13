@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:tam_tam_app/core/routing/routes.dart';
 import 'package:tam_tam_app/core/widgets/slide_in_animation.dart';
 
 import '../../../../../core/theming/app_assets.dart';
@@ -14,13 +16,23 @@ class GenderSection extends StatelessWidget {
         Expanded(
           child: SlideInAnimation(
             fromRight: false,
-            child: GenderCard(image: AppAssets.boysCard, label: "Boys"),
+            child: InkWell(
+              onTap: () {
+                context.push(Routes.boysProductsView);
+              },
+              child: GenderCard(image: AppAssets.boysCard, label: "Boys"),
+            ),
           ),
         ),
         SizedBox(width: 16),
         Expanded(
           child: SlideInAnimation(
-            child: GenderCard(image: AppAssets.girlsCard, label: "Girls"),
+            child: InkWell(
+              onTap: () {
+                context.push(Routes.girlsProductsView);
+              },
+              child: GenderCard(image: AppAssets.girlsCard, label: "Girls"),
+            ),
           ),
         ),
       ],

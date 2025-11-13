@@ -98,4 +98,53 @@ class ProductsModel {
       iqd: 600,
     ),
   ];
+
+  static List<ProductsModel> boysProducts = [
+    ProductsModel(
+      name: 'Rainbocorns Fairycorn Prin.....',
+      image: AppAssets.rainbocorns,
+      description: 'The most popular toy in the world',
+      price: '10\$',
+
+      iqd: 700,
+    ),
+    ProductsModel(
+      name: 'Rainbocorns Fairycorn Prin.....',
+      image: AppAssets.mareo,
+      description: 'The most popular toy in the world',
+      price: '20\$',
+      discount: 10,
+      iqd: 800,
+    ),
+    ProductsModel(
+      name: 'Rainbocorns Fairycorn Prin.....',
+      image: AppAssets.toy,
+      description: 'The most popular toy in the world',
+      price: '15\$',
+      iqd: 600,
+    ),
+    ProductsModel(
+      name: 'Rainbocorns Fairycorn Prin.....',
+      image: AppAssets.mareo,
+      description: 'The most popular toy in the world',
+      price: '20\$',
+      discount: 10,
+      iqd: 800,
+    ),
+    ProductsModel(
+      name: 'Rainbocorns Fairycorn Prin.....',
+      image: AppAssets.toy,
+      description: 'The most popular toy in the world',
+      price: '15\$',
+      iqd: 600,
+    ),
+    ProductsModel(
+      name: 'Rainbocorns Fairycorn Prin.....',
+      image: AppAssets.mareo,
+      description: 'The most popular toy in the world',
+      price: '20\$',
+      discount: 10,
+      iqd: 800,
+    ),
+  ];
 }

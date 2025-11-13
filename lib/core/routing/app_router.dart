@@ -1,4 +1,6 @@
 import 'package:go_router/go_router.dart';
+import 'package:tam_tam_app/features/home/presentation/views/boys_products_view.dart';
+import 'package:tam_tam_app/features/home/presentation/views/girls_products_view.dart';
 import '../helpers/build_slide_transition_page.dart';
 import '../../features/Auth/presentation/views/auth_view.dart';
 import '../../features/Auth/presentation/views/forget_password_view.dart';
@@ -21,6 +23,7 @@ import 'routes.dart';
 abstract class AppRouter {
   static GoRouter createRouter() {
     return GoRouter(
+      // initialLocation: Routes.brandsView,
       routes: [
         GoRoute(
           path: Routes.splashView,
@@ -130,6 +133,20 @@ abstract class AppRouter {
           path: Routes.brandsView,
           pageBuilder: (context, state) =>
               buildSlideTransitionPage(child: const BrandsView(), state: state),
+        ),
+        GoRoute(
+          path: Routes.boysProductsView,
+          pageBuilder: (context, state) => buildSlideTransitionPage(
+            child: const BoysProductsView(),
+            state: state,
+          ),
+        ),
+        GoRoute(
+          path: Routes.girlsProductsView,
+          pageBuilder: (context, state) => buildSlideTransitionPage(
+            child: const GirlsProductsView(),
+            state: state,
+          ),
         ),
       ],
     );

@@ -13,4 +13,8 @@ const List<String> mockBrands = [
   AppAssets.brand2,
   AppAssets.brand3,
   AppAssets.brand4,
+  AppAssets.brand1,
+  AppAssets.brand2,
+  AppAssets.brand3,
+  AppAssets.brand4,
 ];

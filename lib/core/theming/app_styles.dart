@@ -15,6 +15,12 @@ abstract class AppStyles {
     fontFamily: "Poppins",
   );
 
+  static const TextStyle medium25 = TextStyle(
+    fontSize: 25,
+    fontWeight: FontWeightHelper.medium,
+    fontFamily: "Poppins",
+  );
+
   static const TextStyle bold22 = TextStyle(
     fontSize: 22,
     fontWeight: FontWeightHelper.bold,

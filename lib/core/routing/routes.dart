@@ -1,6 +1,5 @@
 class Routes {
   static const String splashView = '/';
-  // static const String splashView = '/splashView';
   static const String onboardingView = '/onboardingView';
   static const String selectLanguage = '/selectLanguage';
   static const String authView = '/authView';
@@ -16,6 +15,7 @@ class Routes {
   static const String hotOffersView = '/hotOffersView';
   static const String babiesProductsView = '/babiesProductsView';
   static const String brandsView = '/brandsView';
-  // static const String mainView = '/';
+  static const String boysProductsView = '/boysProductsView';
+  static const String girlsProductsView = '/girlsProductsView';
   static const String mainView = '/mainView';
 }
